@@ -8,14 +8,14 @@ pipeline {
 
     environment {
         // AWS & EKS Config
-        AWS_ACCOUNT_ID = '768477844960'  // Replace with your AWS Account ID
-        AWS_REGION = 'us-east-2'
-        ECR_REPO = 'prod'
+        AWS_ACCOUNT_ID = '558618577936'  // Replace with your AWS Account ID
+        AWS_REGION = 'eu-west-2'
+        ECR_REPO = 'dev-ecr'
         DOCKER_IMAGE = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${BUILD_NUMBER}"
         
         // EKS Config
-        EKS_CLUSTER_NAME = 'prod'
-        KUBE_NAMESPACE = 'eks-jenkins'
+        EKS_CLUSTER_NAME = 'nick-hub'
+        KUBE_NAMESPACE = 'app-01'
         
         // Git Config
         GIT_REPO = https://github.com/Nicholas-hub5/Jenkins-eks-project-01.git
