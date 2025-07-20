@@ -18,8 +18,8 @@ pipeline {
         KUBE_NAMESPACE = 'eks-jenkins'
         
         // Git Config
-        GIT_REPO = 'https://github.com/Lion-Technology-Solutions/eks-jenkins-maven.git'
-        BRANCH = 'demo'
+        GIT_REPO = https://github.com/Nicholas-hub5/Jenkins-eks-project-01.git
+        BRANCH = 'demo-01'
     }
 
     stages {
